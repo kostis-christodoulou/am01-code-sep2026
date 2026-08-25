@@ -16,9 +16,6 @@ wip/
 # OS cruft
 .DS_Store
 
-# Large shared course datasets (not tracked in git)
-/data/
-
 # Exam materials (kept out of the public repo)
 /AM01 AUT24 Final Exam.pdf
 /C170 Aut 24 Exam.pdf

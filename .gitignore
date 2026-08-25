@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Scratch / work-in-progress
+wip/
+.env
+
+# OS cruft
+.DS_Store
+
+# Large shared course datasets (not tracked in git)
+/data/
+
+# Exam materials (kept out of the public repo)
+/AM01 AUT24 Final Exam.pdf
+/C170 Aut 24 Exam.pdf
+/exam2024_solutions.py

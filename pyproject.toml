@@ -1,0 +1,56 @@
+[project]
+name = "am01-code"
+version = "0.1.0"
+description = "AM01 course environment"
+readme = "README.md"
+requires-python = "==3.12.*"
+
+# Lower bounds below reflect the versions resolved by `uv lock --upgrade`
+# (see uv.lock for exact pins). Re-run `uv lock --upgrade` to refresh.
+dependencies = [
+    # data handling & I/O
+    "beautifulsoup4>=4.15.0",
+    "duckdb>=1.5.4",
+    "geopandas>=1.1.4",
+    "ibis-framework>=12.0.0",
+    "numpy>=2.5.1",
+    "openpyxl>=3.1.5",
+    "pandas>=2.3.1,<3",
+    "pandas-datareader>=0.11.1",
+    "pyjanitor>=0.32.23",
+    "scikit-learn>=1.9.0",
+    "statsmodels>=0.14.6",
+    # teaching datasets
+    "gapminder>=0.1",
+    "nycflights13>=0.0.3",
+    "yfinance>=1.5.1",
+    # visualisation & apps
+    "matplotlib>=3.11.1",
+    "seaborn>=0.13.2",
+    "plotly>=6.9.0",
+    "dash>=4.4.0",
+    "streamlit>=1.59.2",
+    "watchdog>=6.0.0",
+    # dataframe summaries (pulls polars + pyarrow — see note at bottom)
+    "skimpy>=0.0.21",
+    "setuptools>=70,<81",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.3.0",
+    "jupyterlab>=4.6.1",
+    "jupyter>=1.1.1",
+    "pytest>=9.1.1",
+    "setuptools>=70,<81",
+]
+
+# ---------------------------------------------------------------------------
+
+# skimpy / Windows: skimpy hard-depends on polars. On older Windows CPUs without
+# AVX2, polars crashes with "Illegal instruction". Fix on those machines only:
+# `uv add polars-lts-cpu`.
+#
+# Get latest versions:  uv lock --upgrade   (updates uv.lock; ship it alongside)
+# Bump one bound here:  uv add <package>@latest
+# ---------------------------------------------------------------------------

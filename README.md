@@ -9,4 +9,4 @@
 ### Session 2, Workshop 1
 | Notebook | Link |
 |----------|------|
-| HW1 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kostis-christodoulou/am01-code-sep2026/blob/main/session02-workshop1/homework1.ipynb) |
+| HW1 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kostis-christodoulou/am01-code-sep2026/blob/main/session02_workshop1/homework1.ipynb) |
